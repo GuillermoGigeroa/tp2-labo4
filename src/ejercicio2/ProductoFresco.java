@@ -5,7 +5,9 @@ public class ProductoFresco extends Producto{
 	private String paisOrigen;
 	
 	// Constructor
-	public ProductoFresco(String fechaCaducidad, int numeroLote, String fechaEnvasado, String paisOrigen) {
+	public ProductoFresco(String fechaCaducidad, String numeroLote,
+						  String fechaEnvasado, String paisOrigen)
+	{
 		super(fechaCaducidad, numeroLote);
 		this.fechaEnvasado = fechaEnvasado;
 		this.paisOrigen = paisOrigen;
@@ -28,6 +30,7 @@ public class ProductoFresco extends Producto{
 	// Métodos de la clase
 	@Override
 	public String toString() {
-		return super.toString()+"Fecha de envasado: " + fechaEnvasado + "\nPais de origen: " + paisOrigen + "\n";
+		return super.toString()+"Fecha de envasado: "+ fechaEnvasado
+				+ "\nPais de origen: " + paisOrigen + "\n";
 	}
 }

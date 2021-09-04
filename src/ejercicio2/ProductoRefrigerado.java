@@ -4,7 +4,7 @@ public class ProductoRefrigerado extends Producto{
 	private int codigoOrganismo;
 
 	// Constructor
-	public ProductoRefrigerado(String fechaCaducidad, int numeroLote, int codigoOrganismo) {
+	public ProductoRefrigerado(String fechaCaducidad, String numeroLote, int codigoOrganismo) {
 		super(fechaCaducidad, numeroLote);
 		this.codigoOrganismo = codigoOrganismo;
 	}

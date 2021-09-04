@@ -1,6 +1,7 @@
 package ejercicio3;
 
 public class EdificioDeOficinas implements Edificio{
+	
 	private int superficieEdificio;
 	private int numeroDeOficinas;
 	
@@ -19,7 +20,7 @@ public class EdificioDeOficinas implements Edificio{
 	}
 
 	@Override
-	public int getSuperficieEdificio() {
+	public double getSuperficieEdificio() {
 		return superficieEdificio;
 	}
 	

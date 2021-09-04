@@ -2,10 +2,10 @@ package ejercicio2;
 
 public abstract class Producto {
 	private String fechaCaducidad;
-	private int numeroLote;
+	private String numeroLote;
 	
 	// Constructor
-	public Producto(String fechaCaducidad, int numeroLote) {
+	public Producto(String fechaCaducidad, String numeroLote) {
 		this.fechaCaducidad = fechaCaducidad;
 		this.numeroLote = numeroLote;
 	}
@@ -17,13 +17,15 @@ public abstract class Producto {
 	protected void setFechaCaducidad(String fechaCaducidad) {
 		this.fechaCaducidad = fechaCaducidad;
 	}
-	protected int getNumeroDeLote() {
+	
+	protected String getNumeroLote() {
 		return numeroLote;
 	}
-	protected void setNumeroDeLote(int numeroDeLote) {
-		this.numeroLote = numeroDeLote;
+
+	protected void setNumeroLote(String numeroLote) {
+		this.numeroLote = numeroLote;
 	}
-	
+
 	// Métodos de la clase
 	@Override
 	public String toString() {

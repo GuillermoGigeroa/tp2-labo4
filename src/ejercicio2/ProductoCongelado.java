@@ -4,7 +4,7 @@ public class ProductoCongelado extends Producto{
 	private String temperaturaCongelacion;
 	
 	// Constructor
-	public ProductoCongelado(String fechaCaducidad, int numeroLote, String temperaturaCongelacion) {
+	public ProductoCongelado(String fechaCaducidad, String numeroLote, String temperaturaCongelacion) {
 		super(fechaCaducidad, numeroLote);
 		this.temperaturaCongelacion = temperaturaCongelacion;
 	}

@@ -1,7 +1,7 @@
 package ejercicio3;
 
 public class Polideportivo implements Edificio, InstalacionDeportiva{
-	private int superficieEdificio;
+	private double superficieEdificio;
 	private String nombre;
 	private int tipoDeInstalacion;
 
@@ -14,7 +14,7 @@ public class Polideportivo implements Edificio, InstalacionDeportiva{
 	
 	// Getters & Setters
 	@Override
-	public int getSuperficieEdificio() {
+	public double getSuperficieEdificio() {
 		return superficieEdificio;
 	}
 
