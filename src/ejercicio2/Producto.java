@@ -6,7 +6,7 @@ public abstract class Producto {
 	private LocalDate fechaCaducidad;
 	private String numeroLote;
 	
-	// Constructor
+	// Constructores
 	public Producto() {
 		this.fechaCaducidad = LocalDate.now();
 		this.numeroLote = "Sin definir";

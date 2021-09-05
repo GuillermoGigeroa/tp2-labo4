@@ -5,12 +5,18 @@ public class EdificioDeOficinas implements Edificio{
 	private int superficieEdificio;
 	private int numeroDeOficinas;
 	
+	// Constructores
+	public EdificioDeOficinas() {
+		this.superficieEdificio = 0;
+		this.numeroDeOficinas = 0;
+	}
+	
 	public EdificioDeOficinas(int superficieEdificio, int numeroDeOficinas) {
 		this.superficieEdificio = superficieEdificio;
 		this.numeroDeOficinas = numeroDeOficinas;
 	}
 
-	// Getters & Setters
+	// Getters y Setters
 	protected int getNumeroDeOficinas() {
 		return numeroDeOficinas;
 	}
@@ -28,7 +34,7 @@ public class EdificioDeOficinas implements Edificio{
 		this.superficieEdificio = superficieEdificio;
 	}
 	
-	// Métodos de la clase
+	// Metodos de la clase
 	@Override
 	public String toString() {
 		return "Edificio de Oficinas"

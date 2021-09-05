@@ -6,7 +6,13 @@ public class ProductoFresco extends Producto{
 	private LocalDate fechaEnvasado;
 	private String paisOrigen;
 	
-	// Constructor
+	// Constructores
+	public ProductoFresco () {
+		super();
+		this.fechaEnvasado = LocalDate.now();
+		this.paisOrigen = "No cargado";
+	}
+	
 	public ProductoFresco(String fechaCaducidad, String numeroLote,
 						  String fechaEnvasado, String paisOrigen)
 	{

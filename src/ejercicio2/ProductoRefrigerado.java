@@ -3,7 +3,12 @@ package ejercicio2;
 public class ProductoRefrigerado extends Producto{
 	private int codigoOrganismo;
 
-	// Constructor
+	// Constructores
+	public ProductoRefrigerado() {
+		super();
+		this.codigoOrganismo = -1;
+	}
+	
 	public ProductoRefrigerado(String fechaCaducidad, String numeroLote, int codigoOrganismo) {
 		super(fechaCaducidad, numeroLote);
 		this.codigoOrganismo = codigoOrganismo;

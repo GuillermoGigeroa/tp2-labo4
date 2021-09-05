@@ -3,7 +3,12 @@ package ejercicio2;
 public class ProductoCongelado extends Producto{
 	private String temperaturaCongelacion;
 	
-	// Constructor
+	// Constructores
+	public ProductoCongelado() {
+		super();
+		this.temperaturaCongelacion = "Sin cargar";
+	}
+	
 	public ProductoCongelado(String fechaCaducidad, String numeroLote, String temperaturaCongelacion) {
 		super(fechaCaducidad, numeroLote);
 		this.temperaturaCongelacion = temperaturaCongelacion;

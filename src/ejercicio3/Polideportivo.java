@@ -6,13 +6,29 @@ public class Polideportivo implements Edificio, InstalacionDeportiva{
 	private int tipoDeInstalacion;
 
 	// Constructores
+	public Polideportivo() {
+		this.tipoDeInstalacion = 0;
+		this.superficieEdificio = 0;
+		this.nombre = "Sin nombre";
+	}
+	
 	public Polideportivo(int superficieEdificio, String nombre, int tipoDeInstalacion) {
 		this.tipoDeInstalacion = tipoDeInstalacion;
 		this.superficieEdificio = superficieEdificio;
 		this.nombre = nombre;
 	}
 	
-	// Getters & Setters
+	// Metodos de la clase
+	@Override
+	public String toString() {
+		return "Polideportivo"
+				+ "\nSuperficie: " + superficieEdificio 
+				+ "\nNombre: " + nombre
+				+ "\nTipoDeInstalacion: " + tipoDeInstalacion
+				+ "\n";
+	}
+	
+	// Getters y Setters
 	@Override
 	public double getSuperficieEdificio() {
 		return superficieEdificio;
@@ -30,22 +46,12 @@ public class Polideportivo implements Edificio, InstalacionDeportiva{
 		this.nombre = nombre;
 	}
 	
-	public void setTipoDeInstalacion(int tipoDeInstalacion) {
-		this.tipoDeInstalacion = tipoDeInstalacion;
-	}
-	
 	@Override
 	public int getTipoDeInstalacion() {
 		return tipoDeInstalacion;
 	}
 	
-	// Métodos de la clase
-	@Override
-	public String toString() {
-		return "Polideportivo"
-				+ "\nSuperficie: " + superficieEdificio 
-				+ "\nNombre: " + nombre
-				+ "\nTipoDeInstalacion: " + tipoDeInstalacion
-				+ "\n";
+	public void setTipoDeInstalacion(int tipoDeInstalacion) {
+		this.tipoDeInstalacion = tipoDeInstalacion;
 	}
 }
