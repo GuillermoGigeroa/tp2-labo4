@@ -5,24 +5,6 @@ import java.util.Iterator;
 
 public class MainEjercicio1_b {
 
-	public static void comparar(Profesor a, Profesor b) {
-		Boolean igual = false;
-		if (a.getNombre() == b.getNombre()) {
-			if (a.getEdad() == b.getEdad()) {
-				if (a.getCargo() == b.getCargo()) {
-					if (a.getAntiguedadDocente() == b.getAntiguedadDocente()) {
-						igual = true;
-					}
-				}
-			}
-		}
-		if (igual) {
-			System.out.println("Es el mismo profesor.");
-		} else {
-			System.out.println("No es el mismo profesor.");
-		}
-	}
-
 	public static void main(String[] args) {
 		Profesor profesores[] = new Profesor[5];
 		profesores[0] = new Profesor();
@@ -44,7 +26,18 @@ public class MainEjercicio1_b {
 			System.out.println(profes.next().toString());
 		}
 		
-		comparar(profesores[1], profesores[2]);
-		comparar(profesores[3], profesores[4]);
+		if (profesores[3].equals(profesores[4])) {
+			System.out.println("Es el mismo profesor.");
+		} else {
+			System.out.println("No es el mismo profesor.");
+		}
+		
+		/*
+		 * El resultado es que no es el mismo profesor porque tienen ID diferentes
+		 * y esto afecta al .equals de la clase padre que compara los ID.
+		 * En la siguiente parte del método equals:
+		 * if (id != other.id)
+		 * return false;
+		 */
 	}
 }

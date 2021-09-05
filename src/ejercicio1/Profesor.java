@@ -20,8 +20,11 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 	// Métodos de la clase
 	@Override
 	public String toString() {
-		return "ID: " + super.getId() + ", Nombre: " + super.getNombre() + ", Edad: " + super.getEdad() + ", Cargo: "
-				+ cargo + ", Antiguedad: " + antiguedadDocente;
+		return "ID: " + super.getId()
+				+ ", Nombre: " + super.getNombre()
+				+ ", Edad: " + super.getEdad()
+				+ ", Cargo: " + cargo
+				+ ", Antiguedad: " + antiguedadDocente;
 	}
 
 	@Override

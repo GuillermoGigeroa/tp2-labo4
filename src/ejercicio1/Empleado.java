@@ -1,30 +1,36 @@
 package ejercicio1;
 
 public class Empleado {
-	private static int ultimoID = 1000;
+	private static int contador = 1000;
 	private final int id;
 	private String nombre;
 	private int edad;
 
 	// Constructores
 	public Empleado() {
-		id = generarID();
-		nombre = "sin nombre";
-		edad = 99;
+		this.id = contador;
+		this.nombre = "Sin nombre";
+		this.edad = 99;
+		contador++;
 	}
 
 	public Empleado(String nombre, int edad) {
-		id = generarID();
+		this.id = contador;
 		this.nombre = nombre;
 		this.edad = edad;
+		contador++;
 	}
 
 	// Métodos de la clase
+	public static int devuelveProximoID() {
+		return contador;
+	}
+	
 	@Override
 	public String toString() {
-		return "Empleado [id=" + id + ", nombre=" + nombre + ", edad=" + edad + "]";
+		return "ID del empleado: " + id + ", nombre: " + nombre + ", edad: " + edad + ", ";
 	}
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -34,7 +40,7 @@ public class Empleado {
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		return result;
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -56,17 +62,7 @@ public class Empleado {
 		return true;
 	}
 
-	private int generarID() {
-		int idGenerado = ultimoID;
-		ultimoID++;
-		return idGenerado;
-	}
-
-	public static int devuelveProximoID() {
-		return ultimoID;
-	}
-
-	// Getters % Setters
+	// Getters y Setters
 	protected int getId() {
 		return id;
 	}
