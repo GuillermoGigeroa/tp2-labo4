@@ -21,7 +21,7 @@ public class Empleado {
 		contador++;
 	}
 
-	// Métodos de la clase
+	// Metodos de la clase
 	public static int devuelveProximoID() {
 		return contador;
 	}

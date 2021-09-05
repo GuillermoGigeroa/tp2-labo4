@@ -17,7 +17,7 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 		this.antiguedadDocente = antiguedadDocente;
 	}
 
-	// Métodos de la clase
+	// Metodos de la clase
 	@Override
 	public String toString() {
 		return "ID: " + super.getId()
@@ -66,7 +66,7 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 		return 0;
 	}
 	
-	// Getters & Setters
+	// Getters y Setters
 	protected String getCargo() {
 		return cargo;
 	}

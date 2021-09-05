@@ -21,7 +21,7 @@ public class ProductoRefrigerado extends Producto{
 	// Métodos de la clase
 	@Override
 	public String toString() {
-		return super.toString()+"Codigo de organismo: " + codigoOrganismo + "\n";
+		return super.toString() + "Codigo de organismo: " + codigoOrganismo + "\n";
 	}
 	
 }

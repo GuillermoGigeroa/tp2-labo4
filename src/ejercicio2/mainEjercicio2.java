@@ -7,9 +7,13 @@ public class mainEjercicio2 {
 
 	public static void main(String[] args) {
 		ArrayList<Producto> productos = new ArrayList<Producto>(3);
-		productos.add(new ProductoFresco("15/09/2021","A2G1","12/02/2021","Argentina"));
-		productos.add(new ProductoRefrigerado("22/10/2021","AF32",2002));
-		productos.add(new ProductoCongelado("23/12/2028","JK03","0 grados"));
+		
+		Producto pFresco = new ProductoFresco("2021-12-13","905D632L","2021-08-30","Uruguay");
+		Producto pRefrigerado = new ProductoRefrigerado("2022-09-15","AF32",2002);
+
+		productos.add(pFresco);
+		productos.add(pRefrigerado);
+		productos.add(new ProductoCongelado("2028-12-23","JK03","-9 grados celsius"));
 		
 		Iterator<Producto> listaProductos = productos.iterator();
 		while(listaProductos.hasNext()) {
